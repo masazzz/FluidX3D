@@ -160,7 +160,7 @@
 
 
 
-void main_setup() { // cylinder in rectangular duct
+/*void main_setup() { // cylinder in rectangular duct
 	// ######################################################### define simulation box size, viscosity and volume force ############################################################################
 	const float Re = 25000.0f;
 	const float D = 64.0f;
@@ -178,11 +178,11 @@ void main_setup() { // cylinder in rectangular duct
 		if(x==0u||x==Nx-1u||z==0u||z==Nz-1u) lbm.flags[n] = TYPE_S; // x and z non periodic
 	}	// #########################################################################################################################################################################################
 	lbm.run();
-}
+} /**/
 
 
 
-/*void main_setup() { // Taylor-Couette flow
+void main_setup() { // Taylor-Couette flow
 	// ######################################################### define simulation box size, viscosity and volume force ############################################################################
 	LBM lbm(96u, 96u, 192u, 1u, 1u, 1u, 0.04f);
 	// #############################################################################################################################################################################################
@@ -199,7 +199,7 @@ void main_setup() { // cylinder in rectangular duct
 	}	// #########################################################################################################################################################################################
 	lbm.run();
 	//lbm.run(4000u); lbm.u.read_from_device(); println(lbm.u.x[lbm.index(Nx/4u, Ny/4u, Nz/2u)]); wait(); // test for binary identity
-} /**/
+}
 
 
 
