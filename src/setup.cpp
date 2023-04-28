@@ -220,7 +220,7 @@
 
 
 
-void main_setup() { // particle test
+/*void main_setup() { // particle test
 	// ######################################################### define simulation box size, viscosity and volume force ############################################################################
 	const uint L = 128u;
 	const float Re = 1000.0f;
@@ -238,11 +238,11 @@ void main_setup() { // particle test
 		lbm.particles->z[n] = random_symmetric(0.5f*lbm.size().z/4.0f);
 	}
 	lbm.run();
-}
+} /**/
 
 
 
-/*void main_setup() { // delta wing
+void main_setup() { // delta wing
 	// ######################################################### define simulation box size, viscosity and volume force ############################################################################
 	const uint L = 128u;
 	const float Re = 10000.0f;
@@ -260,7 +260,7 @@ void main_setup() { // particle test
 		if(x==0u||x==Nx-1u||y==0u||y==Ny-1u||z==0u||z==Nz-1u) lbm.flags[n] = TYPE_E; // all non periodic
 	}	// #########################################################################################################################################################################################
 	lbm.run();
-} /**/
+}
 
 
 
