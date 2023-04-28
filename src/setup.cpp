@@ -429,7 +429,7 @@
 
 
 
-void main_setup() { // radial fan (enable MOVING_BOUNDARIES and SUBGRID)
+/*void main_setup() { // radial fan (enable MOVING_BOUNDARIES and SUBGRID)
 	// ######################################################### define simulation box size, viscosity and volume force ############################################################################
 	const uint L = 872u/4u;
 	const float Re = 100000.0f;
@@ -455,7 +455,7 @@ void main_setup() { // radial fan (enable MOVING_BOUNDARIES and SUBGRID)
 		lbm.run(dt);
 		mesh->rotate(float3x3(float3(0.0f, 0.0f, 1.0f), domega)); // rotate mesh
 	}
-}
+} /**/
 
 
 
@@ -568,14 +568,14 @@ void main_setup() { // radial fan (enable MOVING_BOUNDARIES and SUBGRID)
 
 
 
-/*void main_setup() { // cow
+void main_setup() { // cow
 	// ######################################################### define simulation box size, viscosity and volume force ############################################################################
 	const float si_u = 1.0f;
 	const float si_w = 0.8f;
 	const float si_nu = 1.48E-5f;
 	const float si_T = 10.0f;
 	const float si_rho = 1.225f;
-	const uint L = 476u;
+	const uint L = 128u;
 	const float u = 0.07f;
 	const float w = (float)L/3.0f;
 	units.set_m_kg_s(w, u, 1.0f, si_w, si_u, si_rho);
@@ -603,7 +603,7 @@ void main_setup() { // radial fan (enable MOVING_BOUNDARIES and SUBGRID)
 	//}
 	//write_file(get_exe_path()+"time.txt", print_time(clock.stop()));
 	lbm.run();
-} /**/
+}
 
 
 

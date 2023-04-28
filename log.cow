@@ -1,0 +1,15 @@
+| Info: OpenCL C code successfully compiled.                                  |
+Loading "../stl/Cow.stl" with 99994 triangles.
+|-----------------.-----------------------------------------------------------|
+| Grid Resolution |                                 128 x 256 x 128 = 4194304 |
+| Grid Domains    |                                             1 x 1 x 1 = 1 |
+| LBM Type        |                                    D3Q19 SRT (FP32/FP16S) |
+| Memory Usage    |                                  CPU 68 MB, GPU 1x 226 MB |
+| Max Alloc Size  |                                                    152 MB |
+| Time Steps      |                                                  infinite |
+| Kin. Viscosity  |                                                0.00005525 |
+| Relaxation Time |                                                0.50016576 |
+| Reynolds Number |                                              Re < 1337491 |
+|---------.-------'-----.-----------.-------------------.---------------------|
+| MLUPs   | Bandwidth   | Steps/s   | Current Step      | Elapsed Time        |
+|      30 |      2 GB/s |         7 |              6356 |              14m22s |
