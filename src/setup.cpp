@@ -203,7 +203,7 @@
 
 
 
-void main_setup() { // lid-driven cavity
+/* void main_setup() { // lid-driven cavity
 	// ######################################################### define simulation box size, viscosity and volume force ############################################################################
 	const uint L = 128u;
 	const float Re = 1000.0f;
@@ -216,11 +216,11 @@ void main_setup() { // lid-driven cavity
 		if(x==0u||x==Nx-1u||y==0u||y==Ny-1u||z==0u||z==Nz-1u) lbm.flags[n] = TYPE_S; // all non periodic
 	}	// #########################################################################################################################################################################################
 	lbm.run();
-}
+} /**/
 
 
 
-/*void main_setup() { // particle test
+void main_setup() { // particle test
 	// ######################################################### define simulation box size, viscosity and volume force ############################################################################
 	const uint L = 128u;
 	const float Re = 1000.0f;
@@ -238,7 +238,7 @@ void main_setup() { // lid-driven cavity
 		lbm.particles->z[n] = random_symmetric(0.5f*lbm.size().z/4.0f);
 	}
 	lbm.run();
-} /**/
+}
 
 
 
