@@ -568,14 +568,14 @@
 
 
 
-void main_setup() { // cow
+/*void main_setup() { // cow
 	// ######################################################### define simulation box size, viscosity and volume force ############################################################################
 	const float si_u = 1.0f;
 	const float si_w = 0.8f;
 	const float si_nu = 1.48E-5f;
 	const float si_T = 10.0f;
 	const float si_rho = 1.225f;
-	const uint L = 128u;
+	const uint L = 476u;
 	const float u = 0.07f;
 	const float w = (float)L/3.0f;
 	units.set_m_kg_s(w, u, 1.0f, si_w, si_u, si_rho);
@@ -603,18 +603,18 @@ void main_setup() { // cow
 	//}
 	//write_file(get_exe_path()+"time.txt", print_time(clock.stop()));
 	lbm.run();
-}
+} /**/
 
 
 
-/*void main_setup() { // Space Shuttle
+void main_setup() { // Space Shuttle
 	// ######################################################### define simulation box size, viscosity and volume force ############################################################################
 	const uint L = 256u; // 1608u
 	const float Re = 1000000.0f;
 	const float u = 0.1f;
 	const uint Lx=(L/8u)*8u, Ly=((L*3u)/8u)*8u, Lz=((L*4u/5u)/8u)*8u;
 	print_info("("+to_string(Lx)+"x"+to_string(Ly)+"x"+to_string(Lz)+") = "+to_string((ulong)Lx*(ulong)Ly*(ulong)Lz));
-	LBM lbm(Lx, Ly, Lz, 2u, 4u, 1u, units.nu_from_Re(Re, (float)L, u));
+	LBM lbm(Lx, Ly, Lz, 1u, 1u, 1u, units.nu_from_Re(Re, (float)L, u));
 	// #############################################################################################################################################################################################
 	const float size = 1.25f*(float)L;
 	const float3 center = float3(lbm.center().x, 0.55f*size, lbm.center().z+0.05f*size);
@@ -641,7 +641,7 @@ void main_setup() { // cow
 	//lbm.write_status();
 	//write_file(get_exe_path()+"time.txt", print_time(clock.stop()));
 	lbm.run();
-} /**/
+}
 
 
 
