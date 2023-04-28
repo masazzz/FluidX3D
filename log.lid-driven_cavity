@@ -1,0 +1,13 @@
+|-----------------.-----------------------------------------------------------|
+| Grid Resolution |                                 128 x 128 x 128 = 2097152 |
+| Grid Domains    |                                             1 x 1 x 1 = 1 |
+| LBM Type        |                                     D3Q19 SRT (FP32/FP32) |
+| Memory Usage    |                                  CPU 34 MB, GPU 1x 192 MB |
+| Max Alloc Size  |                                                    152 MB |
+| Time Steps      |                                                  infinite |
+| Kin. Viscosity  |                                                0.01260000 |
+| Relaxation Time |                                                0.53780000 |
+| Reynolds Number |                                                 Re < 5865 |
+|---------.-------'-----.-----------.-------------------.---------------------|
+| MLUPs   | Bandwidth   | Steps/s   | Current Step      | Elapsed Time        |
+|     172 |     29 GB/s |        82 |             23890 |               3m48s |
