@@ -552,6 +552,7 @@ GC x11_gc;
 XImage* x11_image;
 std::atomic_bool updating_frame = true;
 
+#if !defined(__APPLE__)
 int key_linux(const int keycode) {
 	switch(keycode) {
 		case  38: return  'A'; case 42: return 'G'; case 58: return 'M'; case 39: return 'S'; case 52: return 'Y'; case 15: return '6';
@@ -598,6 +599,34 @@ int key_linux(const int keycode) {
 		default: return 0;
 	}
 }
+#else
+int key_linux(const int keycode) {
+	switch(keycode) {
+		case  8: return  'A'; case 13: return 'G'; case 54: return 'M'; case 9: return 'S'; case 24: return 'Y'; case 30: return '6';
+		case  19: return  'B'; case 12: return 'H'; case 53: return 'N'; case 25: return 'T'; case 14: return 'Z'; case 34: return '7';
+		case  16: return  'C'; case 42: return 'I'; case 39: return 'O'; case 40: return 'U'; case 26: return '1'; case 36: return '8';
+		case  10: return  'D'; case 46: return 'J'; case 43: return 'P'; case 17: return 'V'; case 27: return '2'; case 33: return '9';
+		case  22: return  'E'; case 48: return 'K'; case 20: return 'Q'; case 21: return 'W'; case 28: return '3'; case 31: return '5';
+		case  11: return  'F'; case 45: return 'L'; case 23: return 'R'; case 15: return 'X'; case 29: return '4'; case 37: return '0';
+		case  32: return '+'; case 35: return '-';
+                case  57: return  ' '; // space
+		case  84: return   10; // enter
+		case  59: return    8; // backspace
+		case  61: return   27; // escape
+		case 125: return  127; // delete
+		case  65: return  -20; // caps lock
+		case 134: return  -38; case 133: return  -40; // up/down arrow
+		case 131: return  -37; case 132: return  -39; // left/right arrow
+		case 130: return -112; case 106: return -118; // F1/F7
+		case 128: return -113; case 108: return -119; // F2/F8
+		case 107: return -114; case 109: return -120; // F3/F9
+		case 126: return -115; case 117: return -121; // F4/F10
+		case 104: return -116; case 111: return -122; // F5/F11
+		case 105: return -117; case 119: return -123; // F6/F12
+		default: return 0;
+	}
+}
+#endif
 void update_frame(const double frametime) {
 	main_label(frametime);
 	updating_frame = true;
