@@ -114,7 +114,7 @@
 
 
 
-void main_setup() { // Stokes drag validation
+/* void main_setup() { // Stokes drag validation
 	const uint T = 100; // check error every T steps
 	const float R = 32.0f; // sphere radius
 	const float Re = 0.01f; // Reynolds number
@@ -156,11 +156,11 @@ void main_setup() { // Stokes drag validation
 		E2 = E1;
 		E1 = E0;
 	}
-}
+} /**/
 
 
 
-/*void main_setup() { // cylinder in rectangular duct
+void main_setup() { // cylinder in rectangular duct
 	// ######################################################### define simulation box size, viscosity and volume force ############################################################################
 	const float Re = 25000.0f;
 	const float D = 64.0f;
@@ -178,7 +178,7 @@ void main_setup() { // Stokes drag validation
 		if(x==0u||x==Nx-1u||z==0u||z==Nz-1u) lbm.flags[n] = TYPE_S; // x and z non periodic
 	}	// #########################################################################################################################################################################################
 	lbm.run();
-} /**/
+}
 
 
 
