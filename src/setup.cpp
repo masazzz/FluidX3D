@@ -46,7 +46,7 @@
 
 
 
-void main_setup() { // Poiseuille flow validation
+/* void main_setup() { // Poiseuille flow validation
 	// ######################################################### define simulation box size, viscosity and volume force ############################################################################
 	const uint R = 63u; // channel radius (default: 63)
 	const float umax = 0.1f; // maximum velocity in channel center (must be < 0.57735027f)
@@ -110,11 +110,11 @@ void main_setup() { // Poiseuille flow validation
 		error_min = fmin(error_min, sqrt(error_dif/error_sum));
 		print_info("Poiseuille flow error after t="+to_string(lbm.get_t())+" is "+to_string(error_min)); // typical expected L2 errors: 2-5% (Krüger p. 256)
 	}
-}
+} /**/
 
 
 
-/*void main_setup() { // Stokes drag validation
+void main_setup() { // Stokes drag validation
 	const uint T = 100; // check error every T steps
 	const float R = 32.0f; // sphere radius
 	const float Re = 0.01f; // Reynolds number
@@ -156,7 +156,7 @@ void main_setup() { // Poiseuille flow validation
 		E2 = E1;
 		E1 = E0;
 	}
-} /**/
+}
 
 
 

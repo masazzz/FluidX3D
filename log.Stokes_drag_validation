@@ -1,0 +1,33 @@
+|-----------------.-----------------------------------------------------------|
+| Grid Resolution |                                256 x 256 x 256 = 16777216 |
+| Grid Domains    |                                             1 x 1 x 1 = 1 |
+| LBM Type        |                                     D3Q19 SRT (FP32/FP32) |
+| Memory Usage    |                                CPU 272 MB, GPU 1x 1686 MB |
+| Max Alloc Size  |                                                   1216 MB |
+| Time Steps      |                                                       100 |
+| Kin. Viscosity  |                                                1.00000000 |
+| Relaxation Time |                                                3.50000000 |
+| Reynolds Number |                                                  Re < 148 |
+|---------.-------'-----.-----------.-------------------.---------------------|
+| MLUPs   | Bandwidth   | Steps/s   | Current Step      | Time Remaining      |
+| Info: 100, expected: 0.094248, measured: 0.089838, error = 4.7%             |
+| Info: 200, expected: 0.094248, measured: 0.090083, error = 4.4%             |
+| Info: 300, expected: 0.094248, measured: 0.090320, error = 4.2%             |
+| Info: 400, expected: 0.094248, measured: 0.090708, error = 3.8%             |
+| Info: 500, expected: 0.094248, measured: 0.090828, error = 3.6%             |
+| Info: 600, expected: 0.094248, measured: 0.090887, error = 3.6%             |
+| Info: 700, expected: 0.094248, measured: 0.090921, error = 3.5%             |
+| Info: 800, expected: 0.094248, measured: 0.090944, error = 3.5%             |
+| Info: 900, expected: 0.094248, measured: 0.090959, error = 3.5%             |
+| Info: 1000, expected: 0.094248, measured: 0.090968, error = 3.5%            |
+| Info: 1100, expected: 0.094248, measured: 0.090975, error = 3.5%            |
+| Info: 1200, expected: 0.094248, measured: 0.090980, error = 3.5%            |
+| Info: 1300, expected: 0.094248, measured: 0.090982, error = 3.5%            |
+| Info: 1400, expected: 0.094248, measured: 0.090984, error = 3.5%            |
+| Info: 1500, expected: 0.094248, measured: 0.090985, error = 3.5%            |
+| Info: 1600, expected: 0.094248, measured: 0.090986, error = 3.5%            |
+| Info: 1700, expected: 0.094248, measured: 0.090986, error = 3.5%            |
+| Info: 1800, expected: 0.094248, measured: 0.090986, error = 3.5%            |
+| Info: 1900, expected: 0.094248, measured: 0.090986, error = 3.5%            |
+| Info: Error converged after 1900 steps to 3.5%                              |
+|     167 |     25 GB/s |        10 |         1900 100% |                  0s |
