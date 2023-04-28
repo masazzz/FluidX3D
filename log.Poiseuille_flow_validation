@@ -1,0 +1,93 @@
+|-----------------.-----------------------------------------------------------|
+| Grid Resolution |                                     128 x 1 x 128 = 16384 |
+| Grid Domains    |                                             1 x 1 x 1 = 1 |
+| LBM Type        |                                     D3Q19 SRT (FP32/FP32) |
+| Memory Usage    |                                     CPU 0 MB, GPU 1x 7 MB |
+| Max Alloc Size  |                                                      1 MB |
+| Time Steps      |                                                      1000 |
+| Kin. Viscosity  |                                                0.16666667 |
+| Relaxation Time |                                                1.00000000 |
+| Reynolds Number |                                             Re < 3.464102 |
+| Volume Force    |                0.00000000,     0.00001680,     0.00000000 |
+|---------.-------'-----.-----------.-------------------.---------------------|
+| MLUPs   | Bandwidth   | Steps/s   | Current Step      | Time Remaining      |
+| Info: Poiseuille flow error after t=1000 is 7.8174460747138319E-1           |
+| Info: Poiseuille flow error after t=2000 is 6.1296822264753672E-1           |
+| Info: Poiseuille flow error after t=3000 is 4.8081148587514608E-1           |
+| Info: Poiseuille flow error after t=4000 is 3.7717828662572765E-1           |
+| Info: Poiseuille flow error after t=5000 is 2.9589521910136626E-1           |
+| Info: Poiseuille flow error after t=6000 is 2.3214116550734039E-1           |
+| Info: Poiseuille flow error after t=7000 is 1.8213604568094977E-1           |
+| Info: Poiseuille flow error after t=8000 is 1.4291631760912931E-1           |
+| Info: Poiseuille flow error after t=9000 is 1.1215562386764058E-1           |
+| Info: Poiseuille flow error after t=10000 is 8.8029014691496954E-2          |
+| Info: Poiseuille flow error after t=11000 is 6.9106388781714214E-2          |
+| Info: Poiseuille flow error after t=12000 is 5.4266467832705132E-2          |
+| Info: Poiseuille flow error after t=13000 is 4.2629056420330516E-2          |
+| Info: Poiseuille flow error after t=14000 is 3.3503267186275219E-2          |
+| Info: Poiseuille flow error after t=15000 is 2.6349154949732303E-2          |
+| Info: Poiseuille flow error after t=16000 is 2.0743126097902609E-2          |
+| Info: Poiseuille flow error after t=17000 is 1.6352023385803116E-2          |
+| Info: Poiseuille flow error after t=18000 is 1.2916598895636737E-2          |
+| Info: Poiseuille flow error after t=19000 is 1.0232042418646294E-2          |
+| Info: Poiseuille flow error after t=20000 is 8.1382774431485103E-3          |
+| Info: Poiseuille flow error after t=21000 is 6.5101480152028213E-3          |
+| Info: Poiseuille flow error after t=22000 is 5.2506088504456123E-3          |
+| Info: Poiseuille flow error after t=23000 is 4.2844266199736474E-3          |
+| Info: Poiseuille flow error after t=24000 is 3.5511203997830543E-3          |
+| Info: Poiseuille flow error after t=25000 is 3.0018626824252954E-3          |
+| Info: Poiseuille flow error after t=26000 is 2.5976740131406428E-3          |
+| Info: Poiseuille flow error after t=27000 is 2.3048050192179393E-3          |
+| Info: Poiseuille flow error after t=28000 is 2.0967222035660678E-3          |
+| Info: Poiseuille flow error after t=29000 is 1.9512113895510202E-3          |
+| Info: Poiseuille flow error after t=30000 is 1.8508086718991026E-3          |
+| Info: Poiseuille flow error after t=31000 is 1.7821816278260427E-3          |
+| Info: Poiseuille flow error after t=32000 is 1.7348678139571903E-3          |
+| Info: Poiseuille flow error after t=33000 is 1.7026581067269122E-3          |
+| Info: Poiseuille flow error after t=34000 is 1.6798607119019686E-3          |
+| Info: Poiseuille flow error after t=35000 is 1.6636109794624292E-3          |
+| Info: Poiseuille flow error after t=36000 is 1.6525576131996447E-3          |
+| Info: Poiseuille flow error after t=37000 is 1.6448987473953225E-3          |
+| Info: Poiseuille flow error after t=38000 is 1.6390344869622100E-3          |
+| Info: Poiseuille flow error after t=39000 is 1.6346274598247774E-3          |
+| Info: Poiseuille flow error after t=40000 is 1.6314739354327747E-3          |
+| Info: Poiseuille flow error after t=41000 is 1.6290211813099620E-3          |
+| Info: Poiseuille flow error after t=42000 is 1.6269969850066928E-3          |
+| Info: Poiseuille flow error after t=43000 is 1.6253170376018009E-3          |
+| Info: Poiseuille flow error after t=44000 is 1.6241755099699007E-3          |
+| Info: Poiseuille flow error after t=45000 is 1.6233898780468730E-3          |
+| Info: Poiseuille flow error after t=46000 is 1.6225590524991251E-3          |
+| Info: Poiseuille flow error after t=47000 is 1.6220503966510265E-3          |
+| Info: Poiseuille flow error after t=48000 is 1.6216434353128895E-3          |
+| Info: Poiseuille flow error after t=49000 is 1.6212412589175802E-3          |
+| Info: Poiseuille flow error after t=50000 is 1.6209814495043486E-3          |
+| Info: Poiseuille flow error after t=51000 is 1.6208167560314219E-3          |
+| Info: Poiseuille flow error after t=52000 is 1.6207043637387297E-3          |
+| Info: Poiseuille flow error after t=53000 is 1.6205947257761180E-3          |
+| Info: Poiseuille flow error after t=54000 is 1.6205038718957252E-3          |
+| Info: Poiseuille flow error after t=55000 is 1.6204291344789050E-3          |
+| Info: Poiseuille flow error after t=56000 is 1.6203531435823431E-3          |
+| Info: Poiseuille flow error after t=57000 is 1.6202979412324037E-3          |
+| Info: Poiseuille flow error after t=58000 is 1.6202246620590544E-3          |
+| Info: Poiseuille flow error after t=59000 is 1.6201818257389755E-3          |
+| Info: Poiseuille flow error after t=60000 is 1.6200447154336706E-3          |
+| Info: Poiseuille flow error after t=61000 is 1.6198233325135782E-3          |
+| Info: Poiseuille flow error after t=62000 is 1.6196556882811604E-3          |
+| Info: Poiseuille flow error after t=63000 is 1.6195298246255492E-3          |
+| Info: Poiseuille flow error after t=64000 is 1.6194263690262773E-3          |
+| Info: Poiseuille flow error after t=65000 is 1.6193754724805403E-3          |
+| Info: Poiseuille flow error after t=66000 is 1.6193158569963080E-3          |
+| Info: Poiseuille flow error after t=67000 is 1.6192923109224733E-3          |
+| Info: Poiseuille flow error after t=68000 is 1.6192444169507874E-3          |
+| Info: Poiseuille flow error after t=69000 is 1.6192057931497503E-3          |
+| Info: Poiseuille flow error after t=70000 is 1.6191770988052729E-3          |
+| Info: Poiseuille flow error after t=71000 is 1.6191562169932556E-3          |
+| Info: Poiseuille flow error after t=72000 is 1.6191300924334935E-3          |
+| Info: Poiseuille flow error after t=73000 is 1.6191197540642135E-3          |
+| Info: Poiseuille flow error after t=74000 is 1.6191087375829234E-3          |
+| Info: Poiseuille flow error after t=75000 is 1.6190986835265133E-3          |
+| Info: Poiseuille flow error after t=76000 is 1.6190969029251889E-3          |
+| Info: Poiseuille flow error after t=77000 is 1.6190967256260105E-3          |
+| Info: Poiseuille flow error converged after 78000 steps to                  |
+|       1.6190967256260105E-3                                                 |
+|       8 |      1 GB/s |       470 |        78000 100% |                  0s |

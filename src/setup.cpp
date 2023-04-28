@@ -26,7 +26,7 @@
 
 
 
-void main_setup() { // 2D Taylor-Green vortices
+/*void main_setup() { // 2D Taylor-Green vortices
 	// ######################################################### define simulation box size, viscosity and volume force ############################################################################
 	LBM lbm(1024u, 1024u, 1u, 0.02f);
 	// #############################################################################################################################################################################################
@@ -42,11 +42,11 @@ void main_setup() { // 2D Taylor-Green vortices
 		lbm.rho[n] = 1.0f-sq(A)*3.0f/4.0f*(cos(4.0f*pif*fx/a)+cos(4.0f*pif*fy/b));
 	}	// #########################################################################################################################################################################################
 	lbm.run();
-}
+} /**/
 
 
 
-/*void main_setup() { // Poiseuille flow validation
+void main_setup() { // Poiseuille flow validation
 	// ######################################################### define simulation box size, viscosity and volume force ############################################################################
 	const uint R = 63u; // channel radius (default: 63)
 	const float umax = 0.1f; // maximum velocity in channel center (must be < 0.57735027f)
@@ -110,7 +110,7 @@ void main_setup() { // 2D Taylor-Green vortices
 		error_min = fmin(error_min, sqrt(error_dif/error_sum));
 		print_info("Poiseuille flow error after t="+to_string(lbm.get_t())+" is "+to_string(error_min)); // typical expected L2 errors: 2-5% (Krüger p. 256)
 	}
-} /**/
+}
 
 
 
