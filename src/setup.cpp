@@ -242,7 +242,7 @@
 
 
 
-void main_setup() { // delta wing
+/* void main_setup() { // delta wing
 	// ######################################################### define simulation box size, viscosity and volume force ############################################################################
 	const uint L = 128u;
 	const float Re = 10000.0f;
@@ -260,7 +260,7 @@ void main_setup() { // delta wing
 		if(x==0u||x==Nx-1u||y==0u||y==Ny-1u||z==0u||z==Nz-1u) lbm.flags[n] = TYPE_E; // all non periodic
 	}	// #########################################################################################################################################################################################
 	lbm.run();
-}
+} /**/
 
 
 
@@ -429,7 +429,7 @@ void main_setup() { // delta wing
 
 
 
-/*void main_setup() { // radial fan (enable MOVING_BOUNDARIES and SUBGRID)
+void main_setup() { // radial fan (enable MOVING_BOUNDARIES and SUBGRID)
 	// ######################################################### define simulation box size, viscosity and volume force ############################################################################
 	const uint L = 872u/4u;
 	const float Re = 100000.0f;
@@ -455,7 +455,7 @@ void main_setup() { // delta wing
 		lbm.run(dt);
 		mesh->rotate(float3x3(float3(0.0f, 0.0f, 1.0f), domega)); // rotate mesh
 	}
-} /**/
+}
 
 
 
