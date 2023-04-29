@@ -1,0 +1,48 @@
+.-----------------------------------------------------------------------------.
+|                       ______________   ______________                       |
+|                       \   ________  | |  ________   /                       |
+|                        \  \       | | | |       /  /                        |
+|                         \  \      | | | |      /  /                         |
+|                          \  \     | | | |     /  /                          |
+|                           \  \_.-"  | |  "-._/  /                           |
+|                            \    _.-" _ "-._    /                            |
+|                             \.-" _.-" "-._ "-./                             |
+|                               .-"  .-"-.  "-.                               |
+|                               \  v"     "v  /                               |
+|                                \  \     /  /                                |
+|                                 \  \   /  /                                 |
+|                                  \  \ /  /                                  |
+|                                   \  '  /                                   |
+|                                    \   /                                    |
+|                                     \ /                FluidX3D Version 2.6 |
+|                                      '         Copyright (c) Moritz Lehmann |
+|----------------.------------------------------------------------------------|
+| Device ID    0 | Apple M1                                                   |
+|----------------'------------------------------------------------------------|
+|----------------.------------------------------------------------------------|
+| Device ID      | 0                                                          |
+| Device Name    | Apple M1                                                   |
+| Device Vendor  | Apple                                                      |
+| Device Driver  | 1.2 1.0                                                    |
+| OpenCL Version | OpenCL C 1.2                                               |
+| Compute Units  | 8 at 1000 MHz (1024 cores, 2.048 TFLOPs/s)                 |
+| Memory, Cache  | 10922 MB, 0 KB global / 32 KB local                        |
+| Buffer Limits  | 2048 MB global, 1048576 KB constant                        |
+|----------------'------------------------------------------------------------|
+| Info: OpenCL C code successfully compiled.                                  |
+|-----------------.-----------------------------------------------------------|
+| Grid Resolution |                                  256 x 256 x 64 = 4194304 |
+| Grid Domains    |                                             1 x 1 x 1 = 1 |
+| LBM Type        |                                    D3Q19 SRT (FP32/FP16S) |
+| Memory Usage    |                                  CPU 84 MB, GPU 1x 298 MB |
+| Max Alloc Size  |                                                    152 MB |
+| Time Steps      |                                                  infinite |
+| Kin. Viscosity  |                                                0.02000000 |
+| Relaxation Time |                                                0.56000000 |
+| Reynolds Number |                                                 Re < 1848 |
+| Volume Force    |                0.00000000,     0.00000000,    -0.00100000 |
+| Thermal Diff.   |                                                1.00000000 |
+| Thermal Exp.    |                                                1.00000000 |
+|---------.-------'-----.-----------.-------------------.---------------------|
+| MLUPs   | Bandwidth   | Steps/s   | Current Step      | Elapsed Time        |
+|      18 |      2 GB/s |         4 |               889 |               3m28s |

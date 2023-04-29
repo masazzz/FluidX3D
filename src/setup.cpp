@@ -607,7 +607,7 @@
 
 
 
-void main_setup() { // Space Shuttle
+/*void main_setup() { // Space Shuttle
 	// ######################################################### define simulation box size, viscosity and volume force ############################################################################
 	const uint L = 256u; // 1608u
 	const float Re = 1000000.0f;
@@ -641,7 +641,7 @@ void main_setup() { // Space Shuttle
 	//lbm.write_status();
 	//write_file(get_exe_path()+"time.txt", print_time(clock.stop()));
 	lbm.run();
-}
+} /**/
 
 
 
@@ -1077,7 +1077,7 @@ void main_setup() { // Space Shuttle
 
 
 
-/*void main_setup() { // Rayleigh-Benard convection
+void main_setup() { // Rayleigh-Benard convection
 	// ######################################################### define simulation box size, viscosity and volume force ############################################################################
 	LBM lbm(256u, 256u, 64u, 0.02f, 0.0f, 0.0f, -0.001f, 0.0f, 1.0f, 1.0f);
 	// #############################################################################################################################################################################################
@@ -1097,7 +1097,7 @@ void main_setup() { // Space Shuttle
 		if(z==0u||z==Nz-1u) lbm.flags[n] = TYPE_S;
 	}	// #########################################################################################################################################################################################
 	lbm.run();
-} /**/
+}
 
 
 
